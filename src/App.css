@@ -1,0 +1,141 @@
+/* Genel Body ve App Stil */
+body {
+  background-color: #eee;
+}
+
+.App {
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Header ve Arama Kutusu */
+.header {
+  width: 95%;
+  background-color: rgb(187, 187, 187);
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.arama_kutusu {
+  width: 80%;
+  height: 50px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.arama_kutusu input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: white;
+  color: #414141;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.arama_kutusu button {
+  width: 75px;
+  height: 50px;
+  background-color: rgb(13, 105, 211);
+  color: white;
+  border-radius: 8px;
+  border-color: rgb(0, 54, 99);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* Filtreler */
+.filtreler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.filtreler input,
+.filtreler select {
+  width: calc(50% - 5px);
+  height: 40px;
+  border-radius: 8px;
+  background-color: white;
+  color: #414141;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: none;
+}
+
+/* İlan Kartları */
+.ilan {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.ilan img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ilan-baslik {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.ilan-aciklama {
+  margin-bottom: 8px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.ilan-lokasyon,
+.ilan-kategori {
+  font-style: italic;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* İlan Detay */
+.ilan-detay {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.ilan-detay button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.ilan-detay h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.ilan-detay p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.ilan-detay img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
